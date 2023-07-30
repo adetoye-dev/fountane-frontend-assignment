@@ -16,6 +16,14 @@
   }
 }
 
+@layer components {
+  .container-main {
+    width: 90%;
+    max-width: 1160px;
+    margin-inline: auto;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
