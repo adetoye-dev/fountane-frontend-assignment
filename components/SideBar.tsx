@@ -10,6 +10,7 @@ export default function SideBar() {
   const pathname = usePathname();
   const itemClass =
     "w-full p-2 block rounded-md text-lg pl-8 my-2 flex gap-3 font-medium items-center";
+
   return (
     <>
       <svg
@@ -18,7 +19,7 @@ export default function SideBar() {
         height="14"
         viewBox="0 0 18 14"
         fill="none"
-        className="mt-5 ml-5 md:hidden"
+        className="mt-20 ml-5 md:hidden z-20"
         onClick={() => setIsAsideVisible(true)}
       >
         <path
@@ -29,11 +30,10 @@ export default function SideBar() {
           strokeLinejoin="round"
         />
       </svg>
-
       <aside
         className={`${
           isAsideVisible ? "block pt-8" : "hidden"
-        } w-3/5 absolute bg-black md:w-1/5 h-full flex flex-col md:block md:relative shadow-[0px_2px_20px_-2px_rgba(255,255,255,0.20)] z-10`}
+        } w-3/5 absolute bg-black md:w-1/5 h-3/5 md:h-full flex flex-col md:block md:fixed shadow-[0px_2px_20px_-2px_rgba(255,255,255,0.20)] z-10`}
       >
         {isAsideVisible ? (
           <svg
@@ -54,13 +54,9 @@ export default function SideBar() {
           ""
         )}
         <nav className="w-full h-auto py-6">
-          <Link
-            href="/movies"
-            className="my-8 cursor-pointer hover:text-green-800 uppercase text-white pl-5 font-semibold text-xl"
-            onClick={() => setIsAsideVisible(false)}
-          >
-            Movie List
-          </Link>
+          <h2 className="my-5 cursor-pointe uppercase text-white px-3 text-center font-semibold text-xl">
+            Select Category
+          </h2>
           {routes.map((link) => {
             const { slug, label } = link;
             const isActive = pathname.startsWith(slug);
