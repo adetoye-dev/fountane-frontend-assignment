@@ -15,7 +15,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="py-4 border-b border-green-200">
+    <nav className="py-4 border-b border-green-200 fixed z-40 bg-black top-0 w-full">
       <div className="container-main flex justify-between">
         <Link href="/">Logo</Link>
         <button type="button" onClick={signOut} className="text-neutral-100">
