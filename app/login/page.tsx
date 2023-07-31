@@ -30,9 +30,12 @@ export default function Login() {
   };
 
   return (
-    <div className="flex-1 flex flex-col h-screen w-full items-center px-8 sm:max-w-md justify-center gap-2 mx-auto">
+    <div className="flex flex-col h-screen w-full items-center px-8 sm:max-w-md justify-center gap-2 mx-auto">
+      <Link href="/" className="font-semibold text-2xl my-10">
+        Fountane
+      </Link>
       <form
-        className="flex-1 flex flex-col w-full justify-center gap-2 text-foreground"
+        className="flex flex-col w-full justify-center gap-2 text-foreground"
         onSubmit={handleSignIn}
       >
         {errorMsg ? (
