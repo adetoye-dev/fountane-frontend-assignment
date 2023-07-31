@@ -148,7 +148,7 @@ export default function SignUp() {
           )}
           <button
             type="submit"
-            className="bg-green-700 rounded px-4 py-2 text-white mb-6"
+            className="bg-slate-400 rounded px-4 py-2 text-white mb-6"
           >
             Sign Up
           </button>

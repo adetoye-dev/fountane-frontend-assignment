@@ -65,7 +65,7 @@ export default function SideBar() {
               <Link
                 className={
                   isActive
-                    ? `${itemClass} bg-green-800`
+                    ? `${itemClass} bg-slate-400`
                     : `${itemClass} bg-transparent`
                 }
                 href={slug}

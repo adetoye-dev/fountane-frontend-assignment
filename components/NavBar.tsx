@@ -15,7 +15,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="py-4 border-b border-green-200 fixed z-40 bg-black top-0 w-full">
+    <nav className="py-4 border-b border-sky-200 fixed z-40 bg-black top-0 w-full">
       <div className="container-main flex justify-between">
         <Link href="/" className="font-semibold text-lg">
           Fountane
