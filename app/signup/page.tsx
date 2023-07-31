@@ -66,7 +66,7 @@ export default function SignUp() {
   };
 
   return (
-    <div className="flex-1 flex flex-col h-screen w-full items-center px-8 sm:max-w-md justify-center gap-2">
+    <div className="flex-1 flex flex-col h-screen w-full items-center px-8 sm:max-w-md justify-center gap-2 mx-auto">
       {view === "validate" ? (
         <p className="text-center text-foreground">
           Check <span className="font-bold">{email}</span> to continue signing
