@@ -27,9 +27,11 @@ export default async function MoviesDashboard({
   return (
     <>
       <NavBar />
-      <main className="flex flex-col md:flex-row w-full h-full">
+      <main className="md:flex w-full h-full">
         <SideBar />
-        <div className="px-4 md:px-8 py-10 w-full">{children}</div>
+        <div className="px-4 md:px-8 py-10 w-full md:w-4/5 ml-auto">
+          {children}
+        </div>
       </main>
     </>
   );
