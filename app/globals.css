@@ -26,6 +26,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  width: 100%;
+  height: 100svh;
   background: linear-gradient(
       to bottom,
       transparent,
