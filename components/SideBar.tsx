@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function SideBar() {
-  const [isAsideVisible, setIsAsideVisible] = useState(true);
+  const [isAsideVisible, setIsAsideVisible] = useState(false);
   const pathname = usePathname();
   const itemClass =
     "w-full p-2 block rounded-md text-lg pl-8 my-2 flex gap-3 font-medium items-center";
