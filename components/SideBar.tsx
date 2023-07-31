@@ -18,7 +18,7 @@ export default function SideBar() {
         height="14"
         viewBox="0 0 18 14"
         fill="none"
-        className="my-5 ml-5 md:hidden"
+        className="mt-5 ml-5 md:hidden"
         onClick={() => setIsAsideVisible(true)}
       >
         <path
@@ -33,7 +33,7 @@ export default function SideBar() {
       <aside
         className={`${
           isAsideVisible ? "block pt-8" : "hidden"
-        } w-3/5 absolute bg-black md:w-1/5 h-full flex flex-col md:block md:relative shadow-[0px_2px_20px_-2px_rgba(255,255,255,0.20)] `}
+        } w-3/5 absolute bg-black md:w-1/5 h-full flex flex-col md:block md:relative shadow-[0px_2px_20px_-2px_rgba(255,255,255,0.20)] z-10`}
       >
         {isAsideVisible ? (
           <svg
