@@ -24,12 +24,10 @@ export default async function MoviesDashboard({
     redirect("/login");
   }
 
-  //movie enpoints: now playing, popular, top rated, upcoming
-
   return (
     <>
       <NavBar />
-      <main className="flex w-full h-full">
+      <main className="flex flex-col md:flex-row w-full h-full">
         <SideBar />
         <div className="px-4 md:px-8 py-10 w-full">{children}</div>
       </main>
