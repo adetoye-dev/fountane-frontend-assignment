@@ -3,8 +3,7 @@ export const fetchMovies = async (endpoint: string) => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDlkMWVhNzM3ZGRjY2NmNTNhMzk0YWVhYWRkZmMwNyIsInN1YiI6IjY0YzZjODg4MzBmNzljMDBlNGVmZDc5YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.raBs4FcaTEJxqVYJMYBCxaJPYHWEFYk-5Sa6qKSM2a4",
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_API_TOKEN}`,
     },
   };
 
